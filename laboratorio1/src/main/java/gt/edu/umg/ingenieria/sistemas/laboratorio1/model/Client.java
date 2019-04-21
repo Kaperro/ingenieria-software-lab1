@@ -1,6 +1,7 @@
 package gt.edu.umg.ingenieria.sistemas.laboratorio1.model;
 
 import java.io.Serializable;
+import java.util.Date;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
@@ -18,17 +19,19 @@ public class Client implements Serializable {
     private String nit;
     private String phone;
     private String address;
+    private Date date;
 
     public Client() {
     }
 
-    public Client(Long id, String firstName, String lastName, String nit, String phone, String address) {
+    public Client(Long id, String firstName, String lastName, String nit, String phone, String address, Date date) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
         this.nit = nit;
         this.phone = phone;
         this.address = address;
+        this.date = date;
     }
 
     public Long getId() {
@@ -78,7 +81,12 @@ public class Client implements Serializable {
     public void setAddress(String address) {
         this.address = address;
     }
-    
-    
-    
+
+    public Date getDate() {
+        return date;
+    }
+
+    public void setDate(Date date) {
+        this.date = date;
+    }
 }
