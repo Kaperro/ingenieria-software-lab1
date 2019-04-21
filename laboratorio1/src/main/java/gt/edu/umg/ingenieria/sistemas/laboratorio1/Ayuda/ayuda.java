@@ -4,7 +4,7 @@ import java.util.Locale;
 import static java.util.Calendar.*;
 import java.util.Date;
 
-public class Ayuda {
+public class ayuda {
     public static boolean nAnios(Date birtDate, int N) {
     Calendar calendar = getCalendar(new Date());
     Calendar calendar1 = getCalendar(birtDate);

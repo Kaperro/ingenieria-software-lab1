@@ -2,7 +2,7 @@ package gt.edu.umg.ingenieria.sistemas.laboratorio1.model;
 
 import java.io.Serializable;
 
-public class Error {
+public class Error implements Serializable{
     private String name;
     private String message;
 
