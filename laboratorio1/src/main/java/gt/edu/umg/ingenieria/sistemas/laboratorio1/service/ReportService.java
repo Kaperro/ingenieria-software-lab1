@@ -90,7 +90,7 @@ public class ReportService {
             stringBuilder.append(client.getAddress());
             stringBuilder.append("</td>");
             stringBuilder.append("<td>");
-            stringBuilder.append(client.getBirthDate());
+            stringBuilder.append(client.getDate());
             stringBuilder.append("</td>");
             stringBuilder.append("</tr>\n");
         }
